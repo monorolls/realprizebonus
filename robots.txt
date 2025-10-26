@@ -1,0 +1,32 @@
+# robots.txt for realprizebonus.com
+# Allow all search engines to index the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://realprizebonus.com/sitemap.xml
+
+# Block access to admin or private directories (إن وجدت)
+Disallow: /admin/
+Disallow: /private/
+
+# Optional: block sensitive files
+Disallow: /config.php
+Disallow: /wp-login.php
+Disallow: /wp-admin/
+
+# Googlebot specific instructions
+User-agent: Googlebot
+Disallow:
+Allow: /
+
+# Bingbot specific instructions
+User-agent: Bingbot
+Disallow:
+Allow: /
+
+# Crawl delay (optional, if server load is high)
+# Crawl-delay: 10
+
+# End of robots.txt
