@@ -4,35 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>You're a Winner!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/font.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-     <style>
-    .step-body {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.9;
-    color: #222222;
-    letter-spacing: 0.3px;
-    word-spacing: 1px;
 
-</style>
 <div class="wrapper">
 
     <div class="top-ribbon">
         <div class="ribbon-dot"></div>
         <div class="ribbon-dot"></div>
     </div>
+
     <div class="cover-wrap">
-        <img id="coverImg"
-             src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG0zNmFsN3IzeTIyZmo3cnpuYXA4OWR1cG0yb2dlYWwzY25kbDF6ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RQRnLYE8tUbwwzDc7M/giphy.gif"
-             alt="Giveaway Prize">
+        <img id="coverImg" src="https://cdn.jsdelivr.net/gh/monorolls/img@main/cong.gif" alt="Giveaway Prize">
     </div>
 
-    <p class="winner-announcement">
-        Congratulations! You're the lucky winner of our giveaway! Please follow the final step by clicking the button below to enter your name. Once your information is accurately submitted, we will process and ship your prize immediately.
-    </p>
+    <div class="fb-reactions-wrapper">
+        <div class="fb-stats-bar">
+            <div class="fb-icons-group">
+                <div class="fb-icon-circle fb-icon-like"><i class="fa-solid fa-thumbs-up"></i></div>
+                <div class="fb-icon-circle fb-icon-love"><i class="fa-solid fa-heart"></i></div>
+                <span id="likeCounterTop">942</span>
+            </div>
+        </div>
+        
+        <div class="fb-buttons-bar">
+            <button class="fb-action-btn" id="likeBtn">
+                <i class="fa-regular fa-thumbs-up"></i> <span id="likeBtnText">942</span>
+            </button>
+            <button class="fb-action-btn" id="shareBtn">
+                <i class="fa-solid fa-share"></i> <span id="shareCounter">917</span>
+            </button>
+        </div>
+    </div>
+
+    <p class="winner-announcement">Congratulations! You're the lucky winner of our giveaway! Please follow the step below exactly. Once you complete the steps correctly, we will process your request and ship your prize immediately.    </p>
 
     <div class="divider">
         <div class="divider-line"></div>
@@ -56,7 +64,6 @@
         <div class="step-row">
             <div class="step-num">3</div>
             <div>
-                <div class="step-title">Claim your prize</div>
                 <div class="step-body">Once these steps are 100% completed, you will immediately receive your prize along with an additional $500 cash bonus. Good luck!</div>
             </div>
         </div>
@@ -68,36 +75,50 @@
         <div class="step-row">
             <div class="step-num">4</div>
             <div>
-                <div class="step-title">Important</div>
+                <div class="step-title" style="font-weight: 700; color: #dc2626; font-size: 0.95rem; margin-bottom: 6px;">Important</div>
                 <div class="step-body">You must follow the steps exactly as shown in the images below. If the steps you completed don't appear the same as in the image, you will not receive your reward, so make sure to follow the steps exactly as shown in the image.</div>
             </div>
         </div>
     </div>
 
-    <div class="bottom-banner">
-        <img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/soffs.png" alt="Final Step">
+    <div class="bottom-banner" style="width: 100%; padding: 5px 24px 15px;">
+        <img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/soffs.png" alt="Final Step" style="width: 100%; border-radius: 8px; display: block;">
     </div>
 
-    <div class="trust-bar">
-        <div class="trust-badge">🔒 SSL Secured</div>
-        <div class="trust-badge">✅ No Credit Card</div>
-        <div class="trust-badge">🚀 Fast Delivery</div>
-        <div class="trust-badge">🏅 Verified Giveaway</div>
-    </div>
+  
 
     <footer>
         <div class="footer-row">
             <p class="footer-text">© <span id="currentYear"></span> Prize Dispatch Center</p>
             <p class="footer-text">Status: <span class="live-info">Verified &amp; Secure</span></p>
         </div>
-        <p class="footer-text">Local Date: <span id="liveClock" class="live-info"></span></p>
+        <p class="footer-text" style="margin-top: 6px;">Local Date: <span id="liveClock" class="live-info"></span></p>
     </footer>
+
+    <div class="share-overlay" id="shareOverlay">
+        <div class="share-sheet">
+            <div class="share-header">
+                <h3>You must share this post with 10 friends to claim your reward!</h3>
+                <button class="close-share-btn" id="closeShareBtn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="share-options">
+                <a href="#" class="share-opt-btn whatsapp-color" id="shareWhatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>Share to 10 Friends on WhatsApp</span>
+                </a>
+                <a href="#" class="share-opt-btn messenger-color" id="shareMessenger">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <span>Share to 10 Friends on Messenger</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/tim.js"></script>
- <script src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/sofi2.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/tim.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/16480.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/image.js"></script>
 </body>
 </html>
