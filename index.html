@@ -1,95 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>You're a Winner!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/font.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-    <meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>You're a Winner!</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/font.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
 </head>
 <body oncontextmenu="return false;">
-
 <div class="wrapper">
-    <div class="top-ribbon">
-        <div class="ribbon-dot"></div>
-        <div class="ribbon-dot"></div>
-    </div>
 
-    <div class="cover-wrap">
-        <img id="coverImg" src="https://cdn.jsdelivr.net/gh/monorolls/img@main/cong.gif" alt="Giveaway Prize">
-    </div>
+  <div class="top-ribbon">
+    <div class="ribbon-dot"></div>
+    <div class="ribbon-dot"></div>
+  </div>
 
-    <div id="step1Content">
-        <p class="winner-announcement">
-Congratulations! You’re the lucky winner of our giveaway! To claim your grand prize plus a $1,000 cash bonus, please complete the final step by clicking the button below. Make sure to follow the step correctly to guarantee your prize!
-      </p>
-        <button id="nextStepBtn">Next Step →</button>
-    </div>
+  <div class="cover-wrap">
+    <img id="coverImg" src="https://cdn.jsdelivr.net/gh/monorolls/img@main/cong.gif" alt="Giveaway Prize">
+  </div>
+
+  <div id="step1Content">
+    <p class="winner-announcement">
+      Congratulations! You're the lucky winner of our giveaway! Please follow the final step by clicking the button below to enter your name. Once your information is accurately submitted, we will process and ship your prize immediately.
+    </p>
+    <button id="nextStepBtn"><span class="button-text">Next Step →</span></button>
+  </div>
 
   <div id="step2Content">
-    <div id="my-locker-header"></div>
-    <div class="instruction-text">
-        <b>The Final and Most Important Step</b>
-        <br><br>
-        To secure the grand prize you have won with us, you must complete the final verification step below.
-        <br><br>
-        Please follow these instructions carefully:
-        <br>
-        1. Choose one of the tasks listed below.
-        <br>
-        2. Read the task instructions carefully before starting.
-        <br>
-        3. Complete the task successfully to unlock your reward.
-        <br><br>
-        Note: Once completed, our team will contact you immediately to finalize verification. If you fail to complete a task, your prize will automatically be passed on to the next winner.
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-label">Here's what to do next</div>
+      <div class="divider-line"></div>
     </div>
+
+    <div class="steps">
+      <div class="step-row">
+        <div class="step-num">1</div>
+        <div><div class="step-body">Register to SoFi - Enter your email address - Check email confirm registration - Then Get your FREE credit score and get $10 - DONE</div></div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">2</div>
+        <div>
+          <div class="step-body">Once these steps are 100% completed, you will immediately receive your prize along with an additional $1000 cash bonus. Good luck!</div>
+        </div>
+      </div>
+    </div>
+
     <div id="offerContainer"></div>
-</div>
 
-    <div class="trust-bar">
-        <div class="trust-badge">🔒 SSL Secured</div>
-        <div class="trust-badge">✅ No Credit Card</div>
-        <div class="trust-badge">🚀 Fast Delivery</div>
-        <div class="trust-badge">🏅 Verified Giveaway</div>
-    </div>
-
-    <div class="floating-bottom-bar" id="floatingBottomBar">
-        <div class="floating-bar-text">Click here for more details ➜</div>
-        <div class="floating-bar-buttons">
-            <button class="floating-mini-btn btn-whatsapp trigger-wp-action" title="Share on WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
-            <button class="floating-mini-btn btn-messenger trigger-ms-action" title="Share on Messenger"><i class="fa-brands fa-facebook-messenger"></i></button>
+    <div class="steps">
+      <div class="step-row">
+        <div class="step-num">3</div>
+        <div>
+          <div style="font-weight:700;color:#dc2626;font-size:.95rem;margin-bottom:6px;">Important</div>
+          <div class="step-body">You must follow the steps exactly as shown in the images below. If the steps you completed don't appear the same as in the image, you will not receive your reward, so make sure to follow the steps exactly as shown in the image.</div>
         </div>
+      </div>
     </div>
 
-    <div class="share-overlay" id="shareOverlay">
-        <div class="share-sheet">
-            <div class="share-header">
-                <h3 id="dynamicModalHeading">You must share this post to claim your reward!</h3>
-                <button class="close-share-btn" id="closeShareBtn"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="share-options">
-                <div class="content-whatsapp w-100">
-                    <a href="#" class="share-opt-btn whatsapp-color" id="shareWhatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span>Share to 10 Friends on WhatsApp</span>
-                    </a>
-                </div>
-                <div class="content-messenger w-100">
-                    <a href="#" class="share-opt-btn messenger-color" id="shareMessenger">
-                        <i class="fa-brands fa-facebook-messenger"></i>
-                        <span>Share to 10 Friends on Messenger</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div style="width:100%;padding:5px 24px 15px;">
+      <img src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/soffs.png" alt="Final Step" style="width:100%;border-radius:8px;display:block;">
     </div>
+  </div>
+
+
+
+  <footer>
+    <div class="share-icons-bar">
+      <button class="share-icon-btn wa" id="shareWaBtn">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </button>
+      <button class="share-icon-btn ms" id="shareMsBtn">
+        <i class="fa-brands fa-facebook-messenger"></i> Messenger
+      </button>
+    </div>
+  </footer>
+
+  <div class="share-overlay" id="shareOverlay">
+    <div class="share-sheet">
+      <div class="share-header">
+        <h3>Share this post with 10 friends to claim your reward!</h3>
+        <button class="close-share-btn" id="closeShareBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="share-options">
+        <a href="#" class="share-opt-btn whatsapp-color" id="shareWhatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Share to 10 Friends on WhatsApp</span>
+        </a>
+        <a href="#" class="share-opt-btn messenger-color" id="shareMessenger">
+          <i class="fa-brands fa-facebook-messenger"></i>
+          <span>Share to 10 Friends on Messenger</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/monorolls/tiny@main/house.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/image.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/monorolls/tiny@main//locker.js"></script>
 </body>
 </html>
