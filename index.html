@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>You're a Winner!</title>
+<title>Congratulations! Claim Your Tiny House</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/monorolls/gsn@main/font.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
 </head>
 <body oncontextmenu="return false;">
+
 <div class="wrapper">
 
   <div class="top-ribbon">
@@ -17,69 +19,96 @@
   </div>
 
   <div class="cover-wrap">
-    <img id="coverImg" src="https://cdn.jsdelivr.net/gh/monorolls/img@main/cong.gif" alt="Giveaway Prize">
+    <img id="coverImg" src="https://cdn.jsdelivr.net/gh/monorolls/img@main/cong.gif" alt="Tiny House">
   </div>
 
-<div id="step1Content">
-  <p class="winner-announcement">
-Congratulations! You just won your very own tiny house! Complete the final steps below to claim your prize and register your name, we'll deliver your home as soon as you're done!
+  <div id="step1Content">
+    <p class="winner-announcement">
+      🎉 <strong>Congratulations! Your Tiny House & Free Delivery are Reserved!</strong>
+      <br><br>
+      Complete 1 quick sponsor check below to lock in your prize before it is reassigned to the next waiting winner.
+    </p>
 
+    <!-- Trust Badges -->
+    <div style="text-align:center; font-size:0.85rem; color:#16a34a; font-weight:700; margin-bottom:12px;">
+      ✔ 100% Free Shipping &nbsp;|&nbsp; ✔ No Credit Card Required
+    </div>
 
-  </p>
-  <button id="nextStepBtn"><span class="button-text">Next Step →</span></button>
-</div>
-
-<div id="step2Content">
-  <div class="divider">
-    <div class="divider-line"></div>
-    <div class="divider-label">Here's what to do next</div>
-    <div class="divider-line"></div>
+    <button id="nextStepBtn">
+      <span class="button-text">Claim My Tiny House →</span>
+    </button>
   </div>
 
-  <div class="steps">
-    <div class="step-row">
-      <div class="step-num">1</div>
-      <div><div class="step-body">Make sure to register, you only need to confirm your email and we never ask for your credit card information</div></div>
+  <div id="step2Content">
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-label">Final 2-Minute Step</div>
+      <div class="divider-line"></div>
     </div>
 
-    <div class="step-row">
-      <div class="step-num">2</div>
-      <div><div class="step-body">SIGN UP to SoFi - Enter your email address - Follow the steps - Get your free credit score and $10! - Done. This prize is sponsored by SoFi</div></div>
-    </div>
-    
-    <div class="step-row">
-      <div class="step-num">3</div>
-      <div>
-        <div class="step-body">WINNER, please claim at the final stage because the prize will be entered AUTOMATICALLY</div>
-      </div>
-    </div>
-  </div>
-
-
-<div id="offerContainer"></div>
     <div class="steps">
       <div class="step-row">
-        <div class="step-num">4</div>
+        <div class="step-num">1</div>
         <div>
-          <div style="font-weight:700;color:#dc2626;font-size:.9rem;margin-bottom:6px;">Important</div>
-          <div class="step-body">You must follow the steps exactly as shown in the images below.</div>
+          <div class="step-body">
+            <strong>Register with SoFi:</strong> Sign up below using a valid email address.
+          </div>
+        </div>
+      </div>
+
+      <div class="step-row">
+        <div class="step-num">2</div>
+        <div>
+          <div class="step-body">
+            <strong>Check Credit Score:</strong> View your free score dashboard to confirm delivery eligibility.
+          </div>
+        </div>
+      </div>
+
+      <div class="step-row">
+        <div class="step-num">3</div>
+        <div>
+          <div class="step-body">
+            <strong>Done!</strong> Your home delivery and shipping details will be processed immediately.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="offerContainer"></div>
+
+    <div class="steps">
+      <div class="step-row">
+        <div class="step-num" style="background:#dc2626;"><i class="fas fa-clock" style="font-size: 0.8rem; color:#fff;"></i></div>
+        <div>
+          <div style="font-weight:700;color:#dc2626;font-size:.9rem;margin-bottom:4px;">
+            Time-Sensitive Notice
+          </div>
+          <div class="step-body">
+            ✔ House & Shipping are 100% Free (Sponsored by SoFi)
+            <br>
+            ✔ No credit card or payment needed
+            <br>
+            ✔ Complete within 3 mins to secure your prize
+          </div>
         </div>
       </div>
     </div>
 
     <div style="width:100%;padding:5px 24px 15px;">
-      <img src="https://cdn.jsdelivr.net/gh/monorolls/img@main/stp.webp" alt="Final Step" style="width:100%;border-radius:8px;display:block;" />
+      <img src="https://cdn.jsdelivr.net/gh/monorolls/img@main/stp.webp" alt="Verification Steps" style="width:100%;border-radius:8px;display:block;">
     </div>
   </div>
-</div>
-<footer id="pageFooter">
-    <div class="footer-badge">
-    </div>
-    <p>&copy; 2026 Rewards Verification Portal. All rights reserved.</p>
-</footer>
 
+</div>
+
+<footer id="pageFooter">
+  <div class="footer-badge"></div>
+  <p>© 2026 Tiny House Verification Center. All rights reserved.</p>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/monorolls/tiny@main/11.js"></script>
+
 </body>
 </html>
